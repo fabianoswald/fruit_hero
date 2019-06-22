@@ -13,6 +13,7 @@
 		1F00542322B29CED00A72B33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F00542122B29CED00A72B33 /* LaunchScreen.storyboard */; };
 		1F00542E22B29CED00A72B33 /* fruit_heroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00542D22B29CED00A72B33 /* fruit_heroTests.swift */; };
 		1F00543922B29CED00A72B33 /* fruit_heroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00543822B29CED00A72B33 /* fruit_heroUITests.swift */; };
+		1F3F5B4922B8F6B60091A3C6 /* fruithero3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1F3F5B4822B8F6B60091A3C6 /* fruithero3.mlmodel */; };
 		1F5230C922B30A2100400CE2 /* fruithero.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1F5230C822B30A2000400CE2 /* fruithero.mlmodel */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		1F00543422B29CED00A72B33 /* fruit_heroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fruit_heroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F00543822B29CED00A72B33 /* fruit_heroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fruit_heroUITests.swift; sourceTree = "<group>"; };
 		1F00543A22B29CED00A72B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F3F5B4822B8F6B60091A3C6 /* fruithero3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = fruithero3.mlmodel; sourceTree = SOURCE_ROOT; };
 		1F5230C822B30A2000400CE2 /* fruithero.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = fruithero.mlmodel; path = ../../keras_coreml_ios/fruithero.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 		1F00541722B29CEC00A72B33 /* fruit_hero */ = {
 			isa = PBXGroup;
 			children = (
+				1F3F5B4822B8F6B60091A3C6 /* fruithero3.mlmodel */,
 				1F5230C822B30A2000400CE2 /* fruithero.mlmodel */,
 				1F00541822B29CEC00A72B33 /* AppDelegate.swift */,
 				1F00541A22B29CEC00A72B33 /* ViewController.swift */,
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F00541B22B29CEC00A72B33 /* ViewController.swift in Sources */,
+				1F3F5B4922B8F6B60091A3C6 /* fruithero3.mlmodel in Sources */,
 				1F00541922B29CEC00A72B33 /* AppDelegate.swift in Sources */,
 				1F5230C922B30A2100400CE2 /* fruithero.mlmodel in Sources */,
 			);
