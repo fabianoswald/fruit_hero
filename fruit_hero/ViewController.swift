@@ -70,7 +70,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         // load our CoreML fruithero model
-        guard let model = try? VNCoreMLModel(for: fruithero3().model) else { return }
+        guard let model = try? VNCoreMLModel(for: fruit_hero4().model) else { return }
         
         // run an inference with CoreML
         let request = VNCoreMLRequest(model: model) { (finishedRequest, error) in

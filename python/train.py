@@ -11,7 +11,7 @@ from keras.optimizers import Adam
 from keras.preprocessing.image import img_to_array
 from sklearn.preprocessing import LabelBinarizer
 from sklearn.model_selection import train_test_split
-from model.smallervggnet import SmallerVGGNet
+from pyimagesearch.smallervggnet import SmallerVGGNet
 import matplotlib.pyplot as plt
 from imutils import paths
 import numpy as np
@@ -45,7 +45,7 @@ data = []
 labels = []
 
 # grab the image paths and randomly shuffle them
-print("Loading Images...")
+print("[INFO] loading images...")
 imagePaths = sorted(list(paths.list_images(args["dataset"])))
 random.seed(42)
 random.shuffle(imagePaths)
@@ -66,7 +66,7 @@ for imagePath in imagePaths:
 # scale the raw pixel intensities to the range [0, 1]
 data = np.array(data, dtype="float") / 255.0
 labels = np.array(labels)
-print("Data matrix: {:.2f}MB".format(
+print("[INFO] data matrix: {:.2f}MB".format(
 	data.nbytes / (1024 * 1000.0)))
 
 # binarize the labels
@@ -123,4 +123,4 @@ plt.ylabel("Loss/Accuracy")
 plt.legend(loc="upper left")
 plt.savefig(args["plot"])
 
-print("Accuracy:",H.history['val_acc']," Validation Accuracy:",H.history['acc'])
+#print("Accuracy:",H.history['val_acc']," Validation Accuracy:",H.history['acc'])
