@@ -9,7 +9,7 @@ from keras.layers.core import Dropout
 from keras.layers.core import Dense
 from keras import backend as K
 
-class SmallerVGGNet:
+class VGGNet:
 	@staticmethod
 	def build(width, height, depth, classes):
 		# initialize the model along with the input shape to be
